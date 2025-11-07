@@ -24,7 +24,7 @@
     .card {
         max-width: 21em;
         margin: 1rem; /* without scaling */
-        padding: 1em;
+        padding: 1rem;
     }
 }
 
@@ -32,30 +32,30 @@
     /* todo components */
     .card--marketer {
         border-radius: 1em;
-        border: thin solid var(--border);
-        margin: 1em;
-        padding: 2em;
+        border: 1px solid var(--border);
+        margin: 1rem;
+        padding: 2rem;
     }
     
     .smh {
         margin: 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: var(--secondary);
     }
 
     .green {
         color: var(--primary);
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .big {
         color: var(--primary);
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .underline {
         text-decoration: underline;
-        font-size: 1em;
+        font-size: 1rem;
     }
 
     .btn {
@@ -64,15 +64,13 @@
         border-radius: 0.5em;
         font-size: 1em;
         text-decoration: none;
-        margin: 0.5em 0 0 -0.7em; 
+        margin: 0.5rem 0 0 -0.7rem; 
         padding: 1.2rem 6rem 1.2rem 6rem;
         color: white;
     }
     .list {
         padding-left: 0.5rem;
-        margin: 1em 0 1em 0;
-    }
-    .list--check {
+        margin: 1rem 0 1rem 0;
         list-style-image: url('../images/check.svg');
     }
     .list--cross {
