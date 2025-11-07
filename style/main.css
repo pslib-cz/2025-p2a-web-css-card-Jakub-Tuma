@@ -11,6 +11,7 @@
         --text: #515959;
         --border: #59de0c;
     }
+
     .main {
         display: flow-root;
     }
@@ -21,14 +22,17 @@
         font-family: 'Inter', sans-serif;
         color: var(--text);
     }
+
     .card {
         max-width: 21em;
-        margin: 1rem; /* without scaling */
+        margin: 1rem;
+        /* without scaling */
         padding: 1rem;
     }
 }
 
 @layer components {
+
     /* todo components */
     .card--marketer {
         border-radius: 1em;
@@ -36,7 +40,7 @@
         margin: 1rem;
         padding: 2rem;
     }
-    
+
     .smh {
         margin: 0;
         font-size: 2rem;
@@ -59,20 +63,22 @@
     }
 
     .btn {
-        display: inline-block;
+        display: block;
         background-color: var(--primary);
         border-radius: 0.5em;
         font-size: 1em;
         text-decoration: none;
-        margin: 0.5rem 0 0 -0.7rem; 
+        margin: 0.5rem 0 0 -0.7rem;
         padding: 1.2rem 6rem 1.2rem 6rem;
         color: white;
     }
+
     .list {
         padding-left: 0.5rem;
         margin: 1rem 0 1rem 0;
         list-style-image: url('../images/check.svg');
     }
+
     .list--cross {
         list-style-image: url('../images/cross.svg');
     }
