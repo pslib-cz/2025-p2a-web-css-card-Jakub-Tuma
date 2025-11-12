@@ -18,9 +18,17 @@
         --card-bg: #ffffff;
     }
 
-    .main {
-        display: flow-root;
+    body {
         background-color: var(--web-bg);
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem;
     }
 }
 
@@ -31,22 +39,23 @@
     }
 
     .card {
-        max-width: 21em;
         margin: 1rem;
-        /* without scaling */
         padding: 1rem;
         background-color: var(--card-bg);
+        display: block;
+        box-sizing: border-box;
+        flex: 0 1 23em;
     }
 }
 
 @layer components {
 
-    /* todo components */
     .card--marketer {
         border-radius: 1em;
         border: 1px solid var(--border);
         margin: 1rem;
         padding: 2rem;
+        padding-bottom: 2em;
     }
 
     .smh {
@@ -72,12 +81,15 @@
 
     .btn {
         display: block;
+        width: auto;
+        white-space: nowrap;
         background-color: var(--primary);
         border-radius: 0.5em;
         font-size: 1em;
         text-decoration: none;
-        margin: 0.5rem 0 0 -0.7rem;
-        padding: 1.2rem 6rem 1.2rem 6rem;
+        text-align: center;
+        margin: 0.5rem auto 0;
+        padding: 1.2rem 6rem;
         color: white;
     }
 
@@ -91,46 +103,55 @@
         list-style-image: url('../images/cross.svg');
     }
 
-    .card_green {
+    .card--green {
         border: 2px solid var(--green-border);
         border-radius: 1em;
         box-shadow: 0 4px 10px 0 #3b3b3b;
-        padding:0 0 15em 0;
+        padding: 0 0 12.5em 0;
         text-align: center;
+        max-width: 21em;
     }
-    .Title {
+
+    .title {
         font-size: 2em;
         color: var(--green);
     }
-    .Sub_Title {
+
+    .sub--title {
         font-size: 0.9em;
         margin-top: -0.5em;
     }
-    .Price {
+
+    .price {
         background-color: var(--green-background);
         color: white;
         padding: 2em;
         margin-top: 2.5em;
     }
-    .price_value {
+
+    .price--value {
         font-size: 3em;
         font-weight: 550;
         letter-spacing: 2px;
     }
-    .per_month {
+
+    .per--month {
         font-size: 0.9em;
     }
+
     .description {
         font-size: 0.96em;
         margin: 3em 1em 2em 1em;
     }
-    .btn_around {
+
+    .btn--around {
         margin-top: 3em;
     }
-    .btn_green {
+
+    .btn--green {
         background-color: var(--green);
         color: white;
-        padding: 1em 7.5em;
+        padding: 1rem 7.5rem;
         border: none;
         border-radius: 2em;
         text-decoration: none;
