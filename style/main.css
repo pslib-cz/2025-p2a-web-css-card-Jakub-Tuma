@@ -10,10 +10,17 @@
         --denied: #ff8686;
         --text: #515959;
         --border: #59de0c;
+        --green: #10b981;
+        --green-background: #079d6e;
+        --green-border: #10b880;
+        --text-2: #8c919c;
+        --web-bg: #000000;
+        --card-bg: #ffffff;
     }
 
     .main {
         display: flow-root;
+        background-color: var(--web-bg);
     }
 }
 
@@ -28,6 +35,7 @@
         margin: 1rem;
         /* without scaling */
         padding: 1rem;
+        background-color: var(--card-bg);
     }
 }
 
@@ -81,5 +89,50 @@
 
     .list--cross {
         list-style-image: url('../images/cross.svg');
+    }
+
+    .card_green {
+        border: 2px solid var(--green-border);
+        border-radius: 1em;
+        box-shadow: 0 4px 10px 0 #3b3b3b;
+        padding:0 0 15em 0;
+        text-align: center;
+    }
+    .Title {
+        font-size: 2em;
+        color: var(--green);
+    }
+    .Sub_Title {
+        font-size: 0.9em;
+        margin-top: -0.5em;
+    }
+    .Price {
+        background-color: var(--green-background);
+        color: white;
+        padding: 2em;
+        margin-top: 2.5em;
+    }
+    .price_value {
+        font-size: 3em;
+        font-weight: 550;
+        letter-spacing: 2px;
+    }
+    .per_month {
+        font-size: 0.9em;
+    }
+    .description {
+        font-size: 0.96em;
+        margin: 3em 1em 2em 1em;
+    }
+    .btn_around {
+        margin-top: 3em;
+    }
+    .btn_green {
+        background-color: var(--green);
+        color: white;
+        padding: 1em 7.5em;
+        border: none;
+        border-radius: 2em;
+        text-decoration: none;
     }
 }
